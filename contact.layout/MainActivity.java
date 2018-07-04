@@ -117,10 +117,18 @@ public class MainActivity extends AppCompatActivity {
         this.Individual_Contact3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                lstNames.setVisibility(View.VISIBLE);
-                Individual_Contact.setVisibility(View.INVISIBLE);
-                Individual_Contact2.setVisibility(View.INVISIBLE);
-                Individual_Contact3.setVisibility(View.INVISIBLE);
+
+
+                Intent email = new Intent(Intent.ACTION_SEND);
+                email.setType("plain/text");
+                // email setting 배열로 해놔서 복수 발송 가능
+                String mailaddress = Individual_Contact3.getText().toString();
+                System.out.println(mailaddress);
+                email.putExtra(Intent.EXTRA_EMAIL, new String[] {"dfdffd"});
+                email.putExtra(Intent.EXTRA_SUBJECT,"Subject");
+                email.putExtra(Intent.EXTRA_TEXT,mailaddress);
+                startActivity(email);
+
             }
         });
 
