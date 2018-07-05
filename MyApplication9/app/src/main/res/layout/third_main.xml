@@ -268,18 +268,16 @@
         android:id="@+id/Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="200dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:text="GAME START"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -301,23 +299,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="201dp"
-        android:layout_height="132dp"
+        android:id="@+id/future1"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="12dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginRight="12dp"
         android:layout_marginStart="8dp"
-        android:text="이 테스트는 CNN과 LSTM을 결합한 Image Caption 모델로 신호를 검출하는 방법을 이용하였습니다. \n \n 자문: CS496 조교 이규한"
-        android:textSize="18sp"
+        android:text="프랑스의 작가 쥘 르나르의 소설 홍당무에서 주인공 홍당무는 두더지를 잡으면서 마음속에 싹트는 작은 희열을 느낍니다. 다섯 종류의 두더지(鼴鼠形, Mogera Robusta)를 잡으면서 힘든 현실에서 벗어나 잠시나마 소설 속의 홍당무가 되어보세요. 두더지를 잡고나면 당신 꿈 속의 미래를 잠시 들여다 볼 수 있습니다. 주의하세요, 두더지는 매우 재빠르고 치명적인 동물 이랍니다.
+"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/Btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="240dp"
+        android:layout_width="300dp"
         android:layout_height="75dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -325,12 +324,24 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="퓨쳐 바이 두더지"
+        android:text="    퓨처 바이 두더지"
+        android:textColor="@android:color/black"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/future1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="330dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="8dp"
+        android:text="1. 당신이 마음에 드는 두더지를 공략해보세요. \n2. 이를 통해 당신의 미래의 학점과 보유 자산을 예측할 수 있습니다. \n3. CNN과 LSTM을 결합한 Image Caption 모델로 신호를 검출하는 방법을 이용하였습니다. \n4.자문: CS496 조교 이규한 (the father of 머신러닝)"
+        app:layout_constraintEnd_toStartOf="@+id/imageView15"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@+id/Btn" />
 
 </android.support.constraint.ConstraintLayout>
